@@ -1,23 +1,17 @@
-apply plugin: 'com.android.application'
-
-android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
-
-    defaultConfig {
-        applicationId "com.example.calendar"
-        minSdkVersion 8
-        targetSdkVersion 23
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
     }
 }
 
-dependencies {
-    compile 'com.android.support:support-v4:23.4.0'
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
 }

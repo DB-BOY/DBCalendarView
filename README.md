@@ -21,10 +21,9 @@ DBCalendarView
 1. setOnlyDay(boolean)
 
         true  - 仅显示日期(公历+阴历)   
-    
+        
         false - 显示纪念日、节假日 
     
-   
     ```
        
         //农历部分节假日
